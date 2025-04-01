@@ -2,7 +2,7 @@
 
 ## What is this guide about?
 
-This guide is to have Terraform Enterprise running with Podman on disk mode.
+This guide is to have Terraform Enterprise running with Podman on disk mode and log forwarding to a file on the host with Fluent-bit. 
 Follow the steps and an EC2 instance will be created, with proper DNS entries and security group, TFE will be installed and once TFE is installed an admin user, a TFE organization and a TFE workspace will be created for you.
 The scope of this guide is to be used as an example, it should not be used as is for production purposes.
 
