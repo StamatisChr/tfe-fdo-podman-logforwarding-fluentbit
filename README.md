@@ -64,19 +64,19 @@ vim variables.auto.tfvars
 
 ```sh
 # example tfvars file
-# do not change the variable names on the left column
-# replace only the values in the "< >" placeholders
+# do not change the variable names on the left column,
+# replace only the values on the right of the = sign. 
+# Keep the double quotes " ", replace the example values and placeholder values  like: <dns_host_name>  where needed
 
-aws_region                    = "<aws_region>"             # Set here your desired AWS region, example: eu-west-1
-tfe_instance_class            = "<aws_ec2_instance_class>" # Set here the EC2 instance class only architecture x86_64 is supported, example: m5.xlarge
-db_instance_class             = "<aws_rds_instance_class>" # Set here the RDS instance class, example:  "db.t3.large"
+aws_region                    = "eu-west-1"                # Set here your desired AWS region, in the example: "eu-west-1"
+tfe_instance_class            = "m5.xlarge"                # Set here the EC2 instance class only architecture x86_64 is supported, example: "m5.xlarge"
+db_instance_class             = "db.t3.large"              # Set here the RDS instance class, example:  "db.t3.large"
 hosted_zone_name              = "<dns_zone_name>"          # your AWS route53 DNS zone name
-tfe_dns_record                = "<tfe_host_record>"        # the host record for your TFE instance on your dns zone, example: my-tfe
+tfe_dns_record                = "<tfe_host_record>"        # the host record for your TFE instance on your dns zone, example: "my-tfe"
 tfe_license                   = "<tfe_license_string>"     # TFE license string
 tfe_encryption_password       = "<type_a_password>"        # TFE encryption password
-tfe_version_image             = "<tfe_version>"            # desired TFE version, example: v202410-1
+tfe_version_image             = "v202406-1"                # desired TFE version, example: "v202410-1"
 admin_password                = "<type_a_password>"        # The password of the TFE Admin user
-
 ```
 
 To populate the file according to the file comments and save.
