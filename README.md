@@ -39,13 +39,13 @@ Clone the repository to your computer.
 Open your cli and run:
 
 ```sh
-git clone git@github.com:StamatisChr/tfe-fdo-podman.git
+git clone git@github.com:StamatisChr/tfe-fdo-podman-logforwarding-fluentbit.git
 ```
 
 When the repository cloning is finished, change directory to the repo’s terraform directory:
 
 ```sh
-cd tfe-fdo-podman
+cd tfe-fdo-podman-logforwarding-fluentbit
 ```
 
 Here you need to create a `variables.auto.tfvars` file with your specifications. Use the example tfvars file.
